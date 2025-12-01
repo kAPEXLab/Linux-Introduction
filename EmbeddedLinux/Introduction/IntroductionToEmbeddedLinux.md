@@ -1,3 +1,6 @@
+# Embedded Linux
+Embedded Linux refers to a specialized version of the Linux operating system designed to run on embedded systems—devices with limited resources like memory, storage, and processing power.
+
 # **Elements of Embedded Linux**
 
 * _Toolchain_ → Developers build kernel, rootfs, and applications.
