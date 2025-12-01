@@ -36,3 +36,11 @@ Linux refers primarily to the Linux kernel, the core software that manages hardw
 * Available everywhere — both server and desktop distributions include a terminal interface for administration and development.
 * Ubuntu Server note — this environment provides console-only access, so you’ll work entirely from the terminal.
 * Use tab completion — press Tab to auto-complete commands, filenames, and paths to speed typing and reduce errors.
+* 
+
+**Root**
+
+* Every Linux system includes a root account.
+* Only one account holds the root identity on a given system.
+* The root account has unrestricted control over the entire system.
+* Avoid using root for routine work because mistakes made as root can seriously damage the system.
