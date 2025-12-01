@@ -23,16 +23,16 @@ Linux refers primarily to the Linux kernel, the core software that manages hardw
 
 **Key Components of a Linux System**
 
-• Linux Kernel: The core of the operating system, responsible for managing hardware resources and communication with devices.
-• Command-Line Utilities: Programs used to interact with the operating system through text-based commands.
-• General Utilities: Essential tools included in most distros, such as text editors and file management tools.
+* Linux Kernel: The core of the operating system, responsible for managing hardware resources and communication with devices.
+* Command-Line Utilities: Programs used to interact with the operating system through text-based commands.
+* General Utilities: Essential tools included in most distros, such as text editors and file management tools.
 
 **Linux terminal essentials**
 
-• Master the command line — knowing how to use the terminal is a fundamental skill for working effectively on Linux.
-• Text-driven interaction — the terminal accepts typed commands to perform tasks, control programs, and automate workflows.
-• How commands run — the shell (e.g., Bash or Zsh) parses your input and requests the kernel to execute programs and system calls.
-• Case sensitivity matters — filenames, commands, and options can differ by case, so type carefully.
-• Available everywhere — both server and desktop distributions include a terminal interface for administration and development.
-• Ubuntu Server note — this environment provides console-only access, so you’ll work entirely from the terminal.
-• Use tab completion — press Tab to auto-complete commands, filenames, and paths to speed typing and reduce errors.
+* Master the command line — knowing how to use the terminal is a fundamental skill for working effectively on Linux.
+* Text-driven interaction — the terminal accepts typed commands to perform tasks, control programs, and automate workflows.
+* How commands run — the shell (e.g., Bash or Zsh) parses your input and requests the kernel to execute programs and system calls.
+* Case sensitivity matters — filenames, commands, and options can differ by case, so type carefully.
+* Available everywhere — both server and desktop distributions include a terminal interface for administration and development.
+* Ubuntu Server note — this environment provides console-only access, so you’ll work entirely from the terminal.
+* Use tab completion — press Tab to auto-complete commands, filenames, and paths to speed typing and reduce errors.
