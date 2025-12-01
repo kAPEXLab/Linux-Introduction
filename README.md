@@ -28,6 +28,7 @@ Linux refers primarily to the Linux kernel, the core software that manages hardw
 • General Utilities: Essential tools included in most distros, such as text editors and file management tools.
 
 **Linux terminal essentials**
+
 • Master the command line — knowing how to use the terminal is a fundamental skill for working effectively on Linux.
 • Text-driven interaction — the terminal accepts typed commands to perform tasks, control programs, and automate workflows.
 • How commands run — the shell (e.g., Bash or Zsh) parses your input and requests the kernel to execute programs and system calls.
