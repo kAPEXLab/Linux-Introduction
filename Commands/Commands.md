@@ -64,3 +64,6 @@ Change Directory
 * move `mv sourcefile destinationPath`
 * `mv test.txt test2/` - Moves text.txt to a different directory
 * `mv *.txt test2/` - Moves all .txt to a different directory
+
+## **Tutorial on The Linux command line for beginners**
+[https://ubuntu.com/tutorials/command-line-for-beginners#1-overview](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview)
