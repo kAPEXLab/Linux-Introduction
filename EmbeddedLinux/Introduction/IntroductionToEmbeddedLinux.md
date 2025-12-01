@@ -100,3 +100,34 @@ BitBake is a key tool in the Yocto Project — like a smarter version of make.
 * It understands a mix of Python and shell code.
 * It builds packages and combines them into a bootable Linux image.
 * It tracks everything to make builds efficient and predictable.
+
+# Board Support Package
+* A Board Support Package (BSP) is essentially the bridge between hardware and the operating system.
+* It defines:
+ * Hardware features (CPU, memory, peripherals).
+ * Kernel configuration (drivers, options).
+ * Additional drivers (e.g., Ethernet, GPIO, display).
+ * Optional software components beyond the generic Linux stack.
+
+**meta‑yocto‑bsp Layer**
+* Poky (the Yocto Project reference distribution) includes the meta-yocto-bsp layer.
+* This layer provides reference BSPs for common hardware platforms:
+ * Beaglebone (ARM-based single-board computer).
+ * EdgeRouter (networking device).
+ * Generic IA32/IA64 machines (Intel architectures, both 32‑bit and 64‑bit).
+* These BSPs serve as templates or starting points for developers to:
+ * Understand BSP structure.
+ * Port Linux to new hardware.
+ * Customize kernel and drivers for their own boards.
+
+**Typical BSP Contents**
+* Machine configuration files (.conf) → define CPU, architecture, toolchain.
+* Kernel recipes → specify kernel source, patches, configs.
+* Device tree files → describe hardware layout.
+* Init scripts & drivers → ensure peripherals work at boot.
+* Optional software packages → board‑specific utilities.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/bd38f9b3-bb24-45aa-8ec4-e30374cd8eff" />
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/fa89c857-0688-4b41-8812-f8d6ea42bf01" />
+
