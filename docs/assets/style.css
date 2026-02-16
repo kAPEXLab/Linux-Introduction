@@ -1,0 +1,61 @@
+:root {
+  --bg: #0b1020;
+  --panel: #121a33;
+  --text: #e6e9f0;
+  --muted: #a3acc4;
+  --accent: #5aa3ff;
+  --border: #263253;
+  --green: #3ddc97;
+}
+
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; background:var(--bg); color:var(--text); font: 15px/1.5 system-ui, Segoe UI, Roboto, Arial, sans-serif; }
+
+.topbar {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:10px 14px; border-bottom:1px solid var(--border); background: var(--panel);
+  position: sticky; top: 0; z-index: 10;
+}
+.brand .repo { font-weight:600; }
+.brand .branch { color: var(--muted); margin-left: 8px; }
+.controls { display:flex; gap:8px; align-items:center; }
+.filter {
+  background:#0e1530; color:var(--text); border:1px solid var(--border);
+  border-radius:8px; padding:8px 10px; min-width: 270px;
+}
+.btn {
+  background:#192449; color:var(--text); border:1px solid var(--border);
+  border-radius:8px; padding:8px 10px; cursor:pointer; text-decoration:none;
+}
+.btn:hover { border-color: var(--accent); }
+
+.breadcrumbs { padding:10px 14px; color:var(--muted); }
+.breadcrumbs a { color: var(--accent); text-decoration:none; }
+.breadcrumbs .crumb { font-size: 14px; }
+
+.panel { padding: 10px 14px; }
+.hidden { display:none; }
+
+.grid { width:100%; border-collapse: collapse; }
+.grid thead th {
+  text-align:left; font-weight:600; padding:10px; border-bottom:1px solid var(--border);
+  background:#101737;
+}
+.grid tbody td {
+  padding:10px; border-bottom:1px solid var(--border);
+}
+.col-name a { color: var(--text); text-decoration:none; }
+.col-actions .mini { margin-right:8px; color: var(--muted); text-decoration:none; }
+.row:hover { background:#0e1530; }
+.row.up a { color: var(--accent); }
+
+.loading { padding: 24px 14px; color: var(--muted); }
+.error { padding: 12px 14px; border:1px solid #b33; background:#321; border-radius:8px; }
+
+.file-actions { display:flex; gap:10px; margin: 6px 0 12px; }
+.content { background:#0e1530; border:1px solid var(--border); border-radius:12px; padding: 14px; }
+.content pre { overflow:auto; border-radius:10px; }
+.content img.image { max-width:100%; height:auto; display:block; }
+.content iframe.pdf { width:100%; height:75vh; border:0; }
+
+.footer { color: var(--muted); padding:12px 14px; border-top:1px solid var(--border); }
