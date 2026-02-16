@@ -1,10 +1,12 @@
 ---
-title: Linux Introduction (KPIT APEX Lab)
+title: Linux Introduction
 layout: default
 ---
 
-[Home](/Linux-Introduction/) • 
-[Presentations](/Linux-Introduction/presentations.html)
+# Linux Introduction
 
-{% capture readme %}{% include_relative ../README.md %}{% endcapture %}
+{% capture readme %}
+{% include_relative ../README.md %}
+{% endcapture %}
+
 {{ readme }}
