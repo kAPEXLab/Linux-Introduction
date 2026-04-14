@@ -69,21 +69,21 @@ bitbake core-image-minimal
 ````
 It generrates image for the below configuration
     
-    ````bash
-    Build Configuration:
-    BB_VERSION           = "2.0.0"
-    BUILD_SYS            = "x86_64-linux"
-    NATIVELSBSTRING      = "ubuntu-22.04"
-    TARGET_SYS           = "x86_64-poky-linux"
-    MACHINE              = "qemux86-64"
-    DISTRO               = "poky"
-    DISTRO_VERSION       = "4.0.35"
-    TUNE_FEATURES        = "m64 core2"
-    TARGET_FPU           = ""
-    meta                 
-    meta-poky            
-    meta-yocto-bsp       = "kirkstone:93431249a6260da7bd29ee3ca32145d89e5b8259"
-    ````
+````bash
+Build Configuration:
+BB_VERSION           = "2.0.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "ubuntu-22.04"
+TARGET_SYS           = "x86_64-poky-linux"
+MACHINE              = "qemux86-64"
+DISTRO               = "poky"
+DISTRO_VERSION       = "4.0.35"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+meta                 
+meta-poky            
+meta-yocto-bsp       = "kirkstone:93431249a6260da7bd29ee3ca32145d89e5b8259"
+````
 
 It is a snapshot of your Yocto build context `Host → Toolchain → Target → Distro → Machine → Layers`
 
