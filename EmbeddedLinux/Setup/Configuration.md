@@ -67,3 +67,38 @@ sudo apt install -y \
 ````bash
 bitbake core-image-minimal
 ````
+It generrates image for the below configuration
+    
+    ````bash
+    Build Configuration:
+    BB_VERSION           = "2.0.0"
+    BUILD_SYS            = "x86_64-linux"
+    NATIVELSBSTRING      = "ubuntu-22.04"
+    TARGET_SYS           = "x86_64-poky-linux"
+    MACHINE              = "qemux86-64"
+    DISTRO               = "poky"
+    DISTRO_VERSION       = "4.0.35"
+    TUNE_FEATURES        = "m64 core2"
+    TARGET_FPU           = ""
+    meta                 
+    meta-poky            
+    meta-yocto-bsp       = "kirkstone:93431249a6260da7bd29ee3ca32145d89e5b8259"
+    ````
+
+It is a snapshot of your Yocto build context `Host → Toolchain → Target → Distro → Machine → Layers`
+
+| Pipeline Stage | Configuration Item(s) | Value from Build Configuration | Description |
+|---------------|-----------------------|-------------------------------|-------------|
+| Host | BUILD_SYS | x86_64-linux | Architecture and operating system of the build machine |
+| Host | NATIVELSBSTRING | ubuntu-22.04 | Host Linux distribution detected by Yocto |
+| Toolchain (Build Engine) | BB_VERSION | 2.0.0 | BitBake version driving the build |
+| Toolchain (Build Engine) | (implicit) | Yocto-generated cross-toolchain | Yocto builds and uses its own cross-compiler |
+| Target | TARGET_SYS | x86_64-poky-linux | Architecture, vendor/distro namespace, and OS of generated binaries |
+| Target | TUNE_FEATURES | m64 core2 | CPU tuning and optimization features for target builds |
+| Target | TARGET_FPU | (empty) | Floating-point configuration (implicit on x86-64) |
+| Distro | DISTRO | poky | Linux distribution policy being built |
+| Distro | DISTRO_VERSION | 4.0.35 | Yocto Project Kirkstone LTS point release |
+| Machine (Hardware) | MACHINE | qemux86-64 | Target hardware definition (QEMU virtual x86-64 machine) |
+| Layers (Metadata) | meta | OE-Core | Core OpenEmbedded recipes and build metadata |
+| Layers (Metadata) | meta-poky | Poky layer | Poky reference distribution configuration |
+| Layers (Metadata) | meta-yocto-bsp | kirkstone:93431249a6… | BSP layer providing reference machines like qemux86-64 |
