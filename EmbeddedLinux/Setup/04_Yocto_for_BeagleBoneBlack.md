@@ -112,17 +112,17 @@ BB is one of the reference board of Yocto Project. `/poky/meta-yocto-bsp/conf/ma
  * Conect the SD card again to PC
  * check if counted `mount` it will show on terminal
 
-   /dev/sda2 on /media/apex/ROOT type ext4
-   /dev/sda1 on /media/apex/BOOT type vfat
+   * `/dev/sda2 on /media/apex/ROOT type ext4`
+   * `/dev/sda1 on /media/apex/BOOT type vfat`
  
  * Mounted at build_bbb/tmp/deploy/images/beaglebone-yocto/media/$USER: BOOT  ROOT, check with command `ls /media/$USER`
  * Copy u-boot MLO and u-boot bootloader images into FAT32 partition
-     sudo cp MLO /media/$USER/BOOT
-     sudo cp u-boot.img /media/$USER/BOOT
+    * `sudo cp MLO /media/$USER/BOOT`
+    * `sudo cp u-boot.img /media/$USER/BOOT`
  * Copy kernel image to BOOT partition
-     sudo cp zImage /media/$USER/BOOT
+     * `sudo cp zImage /media/$USER/BOOT`
  * Copy .dtb file (am335x-boneblack.dtb) into BOOT partition. This is required in core-image-minimal case only.
-     sudo cp am335x-boneblack.dtb /media/$USER/BOOT
+     * `sudo cp am335x-boneblack.dtb /media/$USER/BOOT`
  *  As a root user uncompress core-image-minimal-beaglebone-yocto.tar.bz2 to ext4 partition
-     sudo tar -xf core-image-minimal-beaglebone-yocto.tar.bz2 -C /media/$USER/ROOT/
+     * `sudo tar -xf core-image-minimal-beaglebone-yocto.tar.bz2 -C /media/$USER/ROOT/`
  *  `sync`
