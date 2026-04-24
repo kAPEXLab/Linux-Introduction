@@ -310,23 +310,24 @@ How Linux Represents GPIO Internally
 	gpiochip1 may expose 32 pins → lines 0–31.		
 		
 How Does a LED Kernel Driver Work Internally?
-	A minimal LED driver has three layers:
-	1) LED Class Driver
 
-	Registers your LED with the kernel
-	Creates /sys/class/leds/myled/* files
-	Handles brightness logic
+A minimal LED driver has three layers:
+1) LED Class Driver
 
-	2) GPIO Subsystem
+Registers your LED with the kernel
+Creates /sys/class/leds/myled/* files
+Handles brightness logic
 
-	Requests a GPIO
-	Sets direction (output)
-	Drives the value HIGH/LOW
+2) GPIO Subsystem
 
-	3) SoC GPIO Controller
+Requests a GPIO
+Sets direction (output)
+Drives the value HIGH/LOW
 
-	Actual hardware registers toggle the pin
-	Kernel abstracts this from you
+3) SoC GPIO Controller
+
+Actual hardware registers toggle the pin
+Kernel abstracts this from you
 
 	Flow when user writes a value:
 	echo 1 > /sys/class/leds/myled/brightness
