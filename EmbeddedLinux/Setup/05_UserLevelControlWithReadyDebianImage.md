@@ -1,7 +1,7 @@
 # User Level BBB GPIO-LED Control on Debian Image
 
 Login: `ssh debian@192.168.7.2`
-If error: ssh-keygen -f "/home/apexlab/.ssh/known_hosts" -R "192.168.7.2"
+If error: `ssh-keygen -f "/home/apexlab/.ssh/known_hosts" -R "192.168.7.2"`
 
 UserID: debian
 Default Pass: temppwd
